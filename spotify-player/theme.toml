@@ -1,0 +1,48 @@
+[[themes]]
+name="nord plus"
+
+# First Colour Palette Options  
+# Colour No. 1 - Hex: 071108 (Onyx)
+# Colour No. 2 - Hex: 36558F (Dusk Blue)
+# Colour No. 3 - Hex: 96ACB7 (Cool Steel)
+# Colour No. 4 - Hex: 09814A (Sea Green)
+
+# Second Colour Palette Options
+# Colour No. 1 - Hex: 037971 (Blue Spruce)
+# Colour No. 2 - Hex: 03B5AA (Light Sea Green)
+# Colour No. 3 - Hex: 2F1000 (Rich Mahogany)
+# Colour No. 4 - Hex: 0A2463 (Imperial Blue) 
+
+# Third Colour Palette Options
+# Colour No. 1 - Hex: 7EE8FA (Electric Aqua)
+# Colour No. 2 - Hex: 1C5253 (Dark Slate Grey)
+# Colour No. 3 - Hex: F3FFC6 (Cream)
+# Colour No. 4 - Hex: C3EB78 (Lime Cream)
+# Colour No. 5 (an alt colour) - Hex: F6E8EA (Lavender Blush) 
+
+# Spotify Colours
+# Colour No. 1 - 1ED760 (Spotify Green)
+# Colour No. 2 - FFFFFF (White)
+# Colour No. 3 - 191414 (Spotify Black)
+ 
+[themes.palette]
+background = "#071108"
+foreground = "#1ED760" 
+
+[themes.component_style]
+
+# Primary Layout
+selection = { bg = "#1C5253"} 
+block_title = { fg = "#FFFFFF" }
+border = { fg = "#F3FFC6", modifiers = ["Dim"] }
+playback_progress_bar = { fg = "#09814A" }
+playback_status = { fg = "#1ED760"}
+playback_track = { bg = "#071108", fg = "#F3FFC6"}
+playback_artists = { bg = "#071108", fg = "#7EE8FA"}
+playback_album = { bg = "#071108", fg = "#03B5AA"}
+playback_metadata = { bg = "#071108", fg = "#1ED760" }
+like = {fg = "#1ED760"}
+playback_genres = { fg = "#03B5AA"}
+page_desc = { bg = "#071108", fg = "#03B5AA"}
+playlist_desc = { bg = "#071108", fg = "#037971"}
+current_playing = { fg = "#ADD7F6"}
