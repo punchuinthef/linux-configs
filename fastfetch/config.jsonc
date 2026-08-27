@@ -1,0 +1,191 @@
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+	"logo": {
+		"type": "file",
+		"source": "/home/microwave/linux-art.txt",
+		"width": 65,
+		"height": 15,
+		"padding": {
+			"top": 0,
+			"left": 0,
+			"right": 2
+		},
+		"color": {
+			"1": "#1793d1",
+			"2": "#333333"
+		}
+	},
+
+	"display": {
+		"separator": "   ",
+		"key": {
+			"width": 0
+		}
+	},
+
+	"modules": [
+		// PC Specifications
+		{
+			"type": "custom",
+			"format": "╭─────────────────────────────── PC SPECS ──────────────────────────────╮"
+		},
+		{
+			"type": "title",
+			"key": "    user",
+			"keyColor": "blue",
+			"format": "{#blue}{1}@{2}{#}"
+		},
+	
+
+		{
+			"type": "board",
+			"key": "    Board",
+			"keyColor": "#008CD6", 
+			"format": "{#blue}{1}{#}"
+		},
+
+
+		{
+			"type": "cpu",
+			"key": "   󰻠 CPU",
+			"keyColor": "red",
+			"format": "{#red}{1}{#}"
+		},
+
+
+		{
+			"type": "memory",
+			"key": "    RAM",
+			"keyColor": "#ECE81A",
+			"format": "{#yellow}{1} / {2} ({3} used){#}",
+			"percent": {
+				"green": 30,
+				"yellow": 50
+		}
+
+
+		},
+
+		{
+			"type": "gpu",
+			"key":	"   󱐋 GPU",
+			"keyColor": "green",
+			"hideType": "integrated",
+			"format": "{#green}{2}{#}"
+		},
+
+		{
+			"type": "disk",
+			"key": "   󰋊 Storage (/)",
+			"keyColor": "white",
+			"folders": "/",
+			"format": "{#cyan}{1} / {2} ({3}){#}"
+		},
+		
+	{
+			"type": "disk",
+			"key": "   󰋊 Storage (/home)",
+			"keyColor": "white",
+			"folders": "/home",
+			"format": "{#cyan}{1} / {2} ({3}){#}"
+		},
+		{
+			"type": "custom",
+			"format": "╰───────────────────────────────────────────────────────────────────────╯"
+		},
+
+		{
+			"type": "custom",
+			"format": "╭─────────────────────────────── OS SPECS ──────────────────────────────╮"
+		},
+
+		{
+			"type": "os",
+			"key": "    OS",
+			"keyColor":"#1793d1",
+			"format": "{#bright_blue}{name} ({arch}){#}"
+		},
+
+		{
+			"type": "kernel",
+			"key" : "   󰌽 Kernel Version",
+			"keyColor": "#1793d1",
+			"format":  "{#bright_blue}{release} ({sysname})"
+		},
+
+		{
+			"type": "bootmgr",
+			"key" : "   󰞷 Bootloader",
+			"keyColor": "blue",
+			"format": "{#blue}{name}{#}"
+		},
+
+		{
+			"type"	  : "wm",
+			"key" 	  : "    Window Manager",
+			"keyColor": "#33ccff",
+			"format"  : "{#bright_blue}{pretty-name} (v{version})"
+		},
+		{
+			"type": "packages",
+			"key" : "   󰏔 Pacman",
+			"keyColor": "blue",
+			"format": "{#bright_blue}{pacman}{#}"
+		},
+		
+		
+		{
+			"type": "custom",
+			"format": "╰───────────────────────────────────────────────────────────────────────╯"
+		},
+
+		{
+			"type": "custom",
+			"format": "╭─────────────────────────────── TERMINAL ──────────────────────────────╮"
+		},
+		{
+			"type": "terminal",
+			"key" : "    Terminal",
+			"keyColor": "blue",
+			"format": "{#blue}{pretty-name} (v{version}){#}"
+		},
+		{
+			"type"	 : "shell",
+			"key" 	 : "    Shell",
+			"keyColor": "blue",
+			"format" : "{#blue}{process-name} (v{version})"
+		},
+		
+		{
+			"type": "custom",
+			"format": "╰───────────────────────────────────────────────────────────────────────╯"
+		},
+		{
+			"type": "custom",
+			"format": "╭─────────────────────────────── MISCELL ───────────────────────────────╮"
+		},
+
+		{
+			"type"	   : "datetime",
+			"key" 	   : "    Date & Time",
+			"keyColor" : "red",
+			"format"   : "{month}/{day-in-month}/{year-short}  {hour}:{minute}:{second-pretty} {am-pm}"
+		},
+
+			{
+			"type": "custom",
+			"format": "╰───────────────────────────────────────────────────────────────────────╯"
+		}
+
+	]
+}
+
+
+
+
+
+
+
+
+
