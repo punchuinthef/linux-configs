@@ -1,0 +1,64 @@
+### Global settings ###
+# Player that will be used. Possible values: spotify, mpd, mopidy, mpris.
+player: spotify
+# Whether to ignore errors instead of showing them.
+ignoreErrors: false
+# Interval of the internal timer. Determines how often the terminal will be updated.
+timerInterval: 200
+# Interval for checking the position. Doesn't really affect the precision.
+updateInterval: 2000
+
+### Style settings ###
+style:
+  # Horizontal alignment of lines. Possible values: left, center, right.
+  hAlignment: center
+  # Style of the lines before the current one.
+  before:
+    # The colors can be either in HEX format, or ANSI 0-255.
+    background: ""
+    foreground: ""
+    bold: true
+    italic: false
+    underline: false
+    strikethrough: false
+    blink: false
+    faint: false
+  # Style of the current line.
+  current:
+    # The colors can be either in HEX format, or ANSI 0-255.
+    background: ""
+    foreground: ""
+    bold: true
+    italic: false
+    underline: false
+    strikethrough: false
+    blink: false
+    faint: false
+  # Style of the lines after the current one.
+  after:
+    # The colors can be either in HEX format, or ANSI 0-255.
+    background: ""
+    foreground: ""
+    bold: false
+    italic: false
+    underline: false
+    strikethrough: false
+    blink: false
+    faint: true
+
+### Pipe settings ###
+pipe:
+  # Maximum line length. 0 - unlimited.
+  length: 0
+  # How to handle overflowing strings. Possible values: word, none, ellipsis.
+  overflow: word
+
+  ### Browser extension settings ###
+browser:
+  # Port on which the server will be started.
+  port: 8974
+
+  ### Local lyrics source ###
+local:
+  # Folder for scanning .lrc files. Example: "~/Music".
+  folder: ""
