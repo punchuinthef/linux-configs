@@ -1,0 +1,4 @@
+-----------------------
+----- PERMISSIONS -----
+-----------------------
+-- MUST restart Hyprland to apply anything here for security reasons
