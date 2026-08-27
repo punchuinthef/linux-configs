@@ -1,0 +1,34 @@
+# Global properties
+desktop-image: "geology.png"
+desktop-color: "#000000"
+title-text: ""
+terminal-font: "Unifont Regular 16"
+
+# Boot menu component
++ boot_menu {
+  left = 30%
+  top = 35%
+  width = 40%
+  height = 40%
+  selected_item_pixmap_style = "selected_rounded_sliced.png"
+  item_padding = 16
+  item_font = "font.pf2"
+  item_color = "#888888"
+  selected_item_color = "#ffffff"
+  item_height = 32
+  item_padding = 5
+  item_spacing = 10
+  icon_width = 48
+  icon_height = 48
+}
+
+# Optional canvas label
++ label {
+  top = 80%
+  left = 0
+  width = 100%
+  text = "Press 'e' to edit, 'c' for command prompt"
+  color = "#555555"
+  align = "center"
+  font = "font.pf2"
+}
