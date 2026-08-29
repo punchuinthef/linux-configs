@@ -1,0 +1,42 @@
+On a FRESH INSTALL of Arch Linux, these packages are NECESSARY!
+
+- Official Packages (via pacman)
+1.  playerctl
+2.  steam (enable "extra" and "multilib" modules in pacman.conf)
+3.  NetworkManager
+4.  discord
+5.  dolphin
+6.  dunst
+7.  fish
+8.  haruna
+9.  hyprcursor
+10. hypridle
+11. hyprland
+12. hyprlock
+13. kitty
+14. neovim
+15. nvidia-open
+16. nvidia-utils
+17. pipewire
+18. pipewire-alsa
+19. pipewire-audio
+20. pipewire-pulse
+21. sddm
+22. slurp
+23. wl-clipboard
+24. swappy
+25. wireplumber
+26. hyprpolkitagent
+27. hyprland-guiutils
+28. hyprland-qt-support
+29. hyprlang
+30. hyprpaper
+
+
+
+
+AUR Packages (via yay)
+
+1. hypremoji
+2. spotify
+3. zen-browser-bin
