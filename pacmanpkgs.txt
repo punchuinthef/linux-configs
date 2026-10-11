@@ -33,6 +33,9 @@ On a FRESH INSTALL of Arch Linux, these packages are NECESSARY!
 30. hyprpaper
 31. Kid3
 32. Audacity
+33. nwg-look
+34. qt5ct
+35. qt6ct
 
 
 
