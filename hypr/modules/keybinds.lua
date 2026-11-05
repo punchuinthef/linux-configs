@@ -3,19 +3,21 @@
 ---------------------
 
 -- Defined Programs:
-local terminal 	= "kitty"
-local menu 	= "rofi -show drun"
-local browser 	= "zen-browser"
-local messenger = "discord"
-local music 	= "spotify"
-local games 	= "steam"
-local wallpaper = "waypaper"
+local terminal  = "kitty"
+local menu      = "rofi -show drun"
+local browser   = "zen-browser"
+local messenger = "vesktop"
+local music    	= "spotify"
+local music2    = "elisa"
+local games     = "steam"
+local files     = "dolphin" 
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
 
 -- Pre-defined binds
 local mainMod = "SUPER"
+
 
 -- Default Hyprland Keybinds
 local closeWindowBind = hl.bind(mainMod .." + C", hl.dsp.window.close()) 
@@ -25,19 +27,23 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Opening Apps
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. "+ Q", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. "+ R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + D", hl.dsp.exec_cmd(messenger))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd(music))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(games))
-hl.bind(mainMod .. "+ SHIFT + W", hl.dsp.exec_cmd(wallpaper))
-
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(music2))
+hl.bind(mainMod .. "+ D", hl.dsp.exec_cmd(files))
+-- Liquid Shell - Wallpaper Changer
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("qs -c liquid-shell ipc call wallpaper toggle"))
 
 -- Screenshots and Recording
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))
 hl.bind(mainMod .. " + SHIFT + X", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - |wl-copy'))
 
+-- Opening Clipboard
+hl.bind(mainMod .. "+ SHIFT + V", hl.dsp.exec_cmd("copyq toggle"))
 
 -- Switching Workspaces
 for i = 1, 10 do
@@ -48,7 +54,7 @@ for i = 1, 10 do
 
 
 -- Special workspaces
- hl.bind(mainMod .. " + SHIFT + S",        hl.dsp.workspace.toggle_special("magic"))
+--hl.bind(mainMod .. " + SHIFT + S", hl.dsp.workspace.toggle_special("magic"))
 
 
 -- Moving focus with arrow keys
@@ -76,4 +82,3 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 -- Hypremoji
 package.path = package.path .. ";" .. os.getenv("HOME") .. "/.config/hypremoji/?.lua"
 require("hypremoji")
-
