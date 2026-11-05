@@ -26,5 +26,6 @@ Can be found at ~/.config/sptlrx
 6. spotify-player Setup
 Can be found at ~/.config/spotify-player
 
-
+7. Quickshell Setup
+Can be found at `~/.config/quickshell` (put the CONTENTS of `liquid-shell` in that directory.)
 
