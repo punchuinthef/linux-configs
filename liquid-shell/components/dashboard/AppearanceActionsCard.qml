@@ -15,7 +15,7 @@ Item {
             return
         appearanceReadProcess.command = [
             "python3",
-            Quickshell.env("HOME") + "/.config/quickshell/liquid-shell/scripts/appearance-manager.py"
+            Quickshell.env("HOME") + "/.config/quickshell/scripts/appearance-manager.py"
         ]
         appearanceReadProcess.running = true
     }
@@ -71,7 +71,7 @@ Item {
 
         appearanceProcess.command = [
             "python3",
-	   Quickshell.env("HOME") + "/.config/quickshell/liquid-shell/scripts/appearance-manager.py",            
+	   Quickshell.env("HOME") + "/.config/quickshell/scripts/appearance-manager.py",            
 	    "--mode", mode
         ]
         appearanceProcess.running = true
