@@ -36,7 +36,7 @@ hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(games))
 hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(music2))
 hl.bind(mainMod .. "+ D", hl.dsp.exec_cmd(files))
 -- Liquid Shell - Wallpaper Changer
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("qs -c liquid-shell ipc call wallpaper toggle"))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("qs -c ipc call wallpaper toggle"))
 
 -- Screenshots and Recording
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f -'))

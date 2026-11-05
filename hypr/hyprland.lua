@@ -29,7 +29,7 @@ require("modules.env-var")
 -----------------------
 ----- PERMISSIONS -----
 -----------------------
-
+--require("modules.permissions")
 
 -----------------------
 ---- LOOK AND FEEL ----
@@ -50,6 +50,9 @@ require("modules.animations")
 -- Layouts
 require("modules.layout")
 
+-- Quickshell Blur settings
+require("modules.qs-blur")
+
 ----------------
 ----  MISC  ----
 ----------------
@@ -64,10 +67,8 @@ require("modules.input")
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
+require("modules.windowrules")
 require("modules.windowandworkspaces")
-
-
-
 -----------------------
 ---- MISCELLANEOUS ----
 -----------------------
