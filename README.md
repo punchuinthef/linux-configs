@@ -27,5 +27,4 @@ Can be found at ~/.config/sptlrx
 Can be found at ~/.config/spotify-player
 
 7. Quickshell Setup
-Can be found at `~/.config/quickshell` (put the CONTENTS of `liquid-shell` in that directory.)
-
+Can be found at `~/.config/quickshell` (put the CONTENTS of `liquid-shell` in that directory. The Emoji Database should be placed in `~/.local/share/liquid-shell/emoji/`)
