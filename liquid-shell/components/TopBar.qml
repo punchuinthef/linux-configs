@@ -27,7 +27,7 @@ Scope {
 
     Timer {
         id: closeTimer
-        interval: 1500
+        interval: 500
         repeat: false
 
         onTriggered: {
